@@ -22,11 +22,11 @@ Users of this repo can conduct training and configuring Generative Adversarial N
       <ul>
         <li><a href="#required-packages">Required Packages</a></li>
         <li><a href="#demo-project">Demo Project</a></li>
+        <li><a href="#sample-dataset">Sample Dataset</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#publication">Publication</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -73,13 +73,24 @@ $ conda create --name <env> --file <this file>
 
 ### Demo Project
 
+[Demo.ipynb](demo.ipynb) is an example of how to apply the DEGAN framework with your own time series datasets.
+
+To test and use the framework, you may get a local copy up and running the example steps in the demo file.
 
 
-
-### Data Files
-
+### Sample Dataset
 
 
+```
+    .
+    ├── ...
+    ├── Data                    # Test files (alternatively `spec` or `tests`)
+    │   ├── testing time series.csv          # Load and stress tests
+    │   ├── testing.csv         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── training.csv                # Unit tests
+    │   └── val.csv                # Unit tests
+    └── ...
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -114,13 +125,6 @@ $ python PPO_MPC_EP.py
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Contact
-- [Yueyan Gu](mailto:bingqinc@andrew.cmu.edu), PhD student at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab.
-- [Farrokh Jazizadeh](mailto:marioberges@cmu.edu), Associate Professor at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Publication
 
 Further details of the framework is introduced in this paper:
@@ -151,6 +155,17 @@ in the Software without restriction, including without limitation the rights to 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Contact
+
+[Yueyan Gu](https://yueyangu.github.io/aboutme/) - yueyangu@vt.edu
+- PhD student at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab
+
+[Farrokh Jazizadeh](https://www.inform-lab.org/farrokh-jazizadeh) - jazizade@vt.edu
+- Associate Professor at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
