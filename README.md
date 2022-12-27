@@ -1,11 +1,40 @@
+<a name="readme-top"></a>
+
 # DEGAN
 
 This is the code repository for **DEGAN** (**D**ensity **E**stimation **G**enerative **A**dversarial **N**etwork).
 
 Users of this repo can conduct training and configuring Generative Adversarial Network (GAN) through the DEGAN framework for detecting anomalies on new time series. 
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#framework">Framework</a></li>
+        <li><a href="#time-series">Time Series</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#required-packages">Required Packages</a></li>
+        <li><a href="#demo-project">Demo Project</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-## Description
+
+## Introduction
 **DEGAN** is an unsupervised Generative Adversarial Network (GAN)-based anomaly detection framework. 
 
 ### Framework  
@@ -27,7 +56,9 @@ The example below shows an overall process of using repeated time series data fo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Install Required Packages
+## Getting Started
+
+### Required Packages
 
 The following main packages were used：   
 [numpy](https://numpy.org/install/) / [random](https://docs.python.org/3/library/random.html) / [tensorflow](https://www.tensorflow.org/install) / [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
@@ -39,6 +70,10 @@ This file may be used to create an environment using:
 $ conda create --name <env> --file <this file>
 # platform: osx-arm64
 ```
+
+### Demo Project
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
