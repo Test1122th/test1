@@ -80,47 +80,53 @@ To test and use the framework, you may get a local copy up and running the examp
 
 ### Sample Dataset
 
+The sample dataset is aquired from a building energy anomaly data (Link here). For the general usage of the project, the original sample data was simply pre-processed into the following datasets:
 
 ```
-    .
-    ├── ...
-    ├── Data                    # Test files (alternatively `spec` or `tests`)
-    │   ├── testing time series.csv          # Load and stress tests
-    │   ├── testing.csv         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── training.csv                # Unit tests
-    │   └── val.csv                # Unit tests
+    ├── Data                           # Data files
+    │   ├── testing time series.csv        # testing time series data
+    │   ├── testing.csv                    # testing data
+    │   ├── training.csv                   # training data
+    │   └── val.csv                        # validation data
     └── ...
 ```
+
+Users of this framework can organize their dataset following the similar structure.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Files
 
-To generate "historical" data from baseline controller, 
+The main functions of the DEGAN Demo are in the folder [DEGAN](https://github.com/Test1122th/test1/tree/main/DEGAN).
+
+
+To **generative adversarial network (GAN)** , including building the generator and the discriminator model to combining the two, setting their trainability, generating sample random noise, training and saving the trained discriminator models, refer to:
 
 ```
-$ python simulate.py
+$ python Conv1D_GAN.py
 ```
 
-For **Offline Pretraining**, 
+To use the discriminator model to **evaluate the testing inspection** making use of the saved discriminator model, refer to:
 ```
-$ python Imit_EP.py
+$ python evaluate.py
 ```
 
-For **Online Learning**, 
+To test the time series data using the trained discriminator from the generative adversarial network, and **calculate the performance metrics** (Precision, Recall, F1) across the testing data, refer to:
 ```
-$ python PPO_MPC_EP.py
+$ python test.py
 ``` 
 
+To **train and validate the Generative Adversarial Network** on the time series, and extracte the discriminator model to be used for testing, refer to:
 ```
-    .
-    ├── ...
-    ├── test                    # Test files (alternatively `spec` or `tests`)
-    │   ├── benchmarks          # Load and stress tests
-    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── unit                # Unit tests
-    └── ...
+$ python train_val.py
+``` 
+
+To look into the **helper functions** that perform part of the computations in other functions, refer to:
 ```
+$ python utils.py
+``` 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +153,7 @@ If you find this framework helpful to your research, please cite it with the fol
 
 **MIT License**
 
-Copyright (c) 2023 Yueyan Gu
+Copyright (c) 2023 NAME HERE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
