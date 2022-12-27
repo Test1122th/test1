@@ -14,7 +14,7 @@ The framework contains three main components: GAN training, _**D**_ model select
 
 In the anomaly detection component, kernel density estimation is used to assign a probability distribution to the suspicious data points identified by the selected _**D**_ model and identify the areas with the highest probability of being anomalies.
 
-![Framework](imgs/degan_framework.png)
+<img src="https://github.com/Test1122th/test1/blob/main/imgs/degan_framework.png" width="800" height="650" />
 
 ### Time Series
 
@@ -22,23 +22,21 @@ The DEGAN framework centers around repeated time series acquired to monitor the 
 
 The example below shows an overall process of using repeated time series data for training, validation and testing in DEGAN, where _TSA_ is training data, _TSB_ is validation data and _TSC_ is testing data. 
 
+<img src="https://github.com/Test1122th/test1/blob/main/imgs/time_series.png" width="600" height="450" />
 
-![Timeseries](imgs/time_series.png)
 
 ## Install Required Packages
-The following two packages were used.    
-- [Gym-Eplus](https://github.com/zhangzhizza/Gym-Eplus)
-    - This package is an OpenGym AI wrapper for EnergyPlus. 
-    - Install the package following its [documentation](https://github.com/zhangzhizza/Gym-Eplus).
-    - While the documentation of this repo specifies EnergyPlus version 8.6, but the Gym-plus package is applicable to any EnergyPlus version 8.x. 
-- [mpc.torch](https://github.com/locuslab/mpc.pytorch)
-    - This package is a fast and differentiable model predictive control solver for PyTorch.
-    - The required files are already placed under ./diff_mpc. No installation is necessary.
 
-Install other packages by, 
+The following main packages were used：   
+[numpy](https://numpy.org/install/) / [random](https://docs.python.org/3/library/random.html) / [tensorflow](https://www.tensorflow.org/install) / [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+
+Other packages can be referred in [requirements](requirements.txt).
+
+This file may be used to create an environment using:
 ```
-$ pip install -r requirements.txt
-``` 
+$ conda create --name <env> --file <this file>
+# platform: osx-arm64
+```
 
 ## Register Simulation Environments
 We demonstrate Gnu-RL in an EnergyPlus model. Check [here](Demo.ipynb) for details.
