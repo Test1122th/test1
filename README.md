@@ -75,6 +75,11 @@ $ conda create --name <env> --file <this file>
 
 
 
+
+### Data Files
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -96,10 +101,25 @@ For **Online Learning**,
 $ python PPO_MPC_EP.py
 ``` 
 
-## Contact
-- [Bingqing Chen](mailto:bingqinc@andrew.cmu.edu), PhD Candidate at Carnegie Mellon University, Department of Civil and Environmental Engineering, Intelligent Infrastructure Research Laboratory (INFERLab).
-- [Mario Berges](mailto:marioberges@cmu.edu), Professor at Carnegie Mellon University, Department of Civil and Environmental Engineering, INFERLab
+```
+    .
+    ├── ...
+    ├── test                    # Test files (alternatively `spec` or `tests`)
+    │   ├── benchmarks          # Load and stress tests
+    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit                # Unit tests
+    └── ...
+```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Contact
+- [Yueyan Gu](mailto:bingqinc@andrew.cmu.edu), PhD student at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab.
+- [Farrokh Jazizadeh](mailto:marioberges@cmu.edu), Associate Professor at Virginia Tech, Department of Civil and Environmental Engineering, INFORM Lab
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Publication
 
@@ -117,5 +137,28 @@ If you find this framework helpful to your research, please cite it with the fol
 }
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
+
+**MIT License**
+
+Copyright (c) 2023 Yueyan Gu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgments
+
+Here are some resources that are helpful to the creation of this Project Repository.
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
