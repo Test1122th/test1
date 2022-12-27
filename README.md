@@ -1,22 +1,18 @@
 # DEGAN
 
-This is the companion code repository for [Gnu-RL: A Precocial Reinforcement Learning Solution for Building HVAC Control Using a Differentiable MPC Policy](https://dl.acm.org/citation.cfm?id=3360849). If our paper is helpful to your research, cite it using the following reference:
+This is the code repository for **DEGAN** (**D**ensity **E**stimation **G**enerative **A**dversarial **N**etwork).
 
-```
-@inproceedings{chen2019gnu,
-  title={Gnu-RL: A Precocial Reinforcement Learning Solution for Building HVAC Control Using a Differentiable MPC Policy},
-  author={Chen, Bingqing and Cai, Zicheng and Berg{\'e}s, Mario},
-  booktitle={Proceedings of the 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
-  pages={316--325},
-  year={2019},
-  organization={ACM}
-}
-```
+Users of this repo can conduct training and configuring Generative Adversarial Network (GAN) through the DEGAN framework for detecting anomalies on new time series. 
+
 
 ### Description
-Gnu-RL is a novel approach that enables practical deployment of reinforcement learning (RL) for heating, ventilation, and air conditioning (HVAC) control and requires no prior information other than historical data from existing HVAC controllers. 
+**DEGAN** is an unsupervised Generative Adversarial Network (GAN)-based anomaly detection framework. 
 
-Prior to any interaction with the environment, a Gnu-RL agent is pre-trained on historical data using imitation learning, which enables it to match the behavior of the existing controller. Once it is put in charge of controlling the environment, the agent continues to improve its policy end-to-end, using a policy gradient algorithm.
+The framework contains three main components: GAN training, _**D**_ model selection, and anomaly detection. It makes use of the information contained in normal time series (processed using a sliding window method) during GAN training and _**D**_ model selection, enabling a validated _**D**_ model to be an independent anomaly detector after training for a given system. 
+
+In the anomaly detection component, kernel density estimation is used to assign a probability distribution to the suspicious data points identified by the selected _**D**_ model and identify the areas with the highest probability of being anomalies.
+
+
 
 ![Framework](imgs/framework.png)
 
@@ -83,5 +79,23 @@ $ python PPO_MPC_EP.py
 ### Contact
 - [Bingqing Chen](mailto:bingqinc@andrew.cmu.edu), PhD Candidate at Carnegie Mellon University, Department of Civil and Environmental Engineering, Intelligent Infrastructure Research Laboratory (INFERLab).
 - [Mario Berges](mailto:marioberges@cmu.edu), Professor at Carnegie Mellon University, Department of Civil and Environmental Engineering, INFERLab
+
+
+### Publication
+
+Further details of the framework is introduced in this paper:
+[DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation](https://arxiv.org/abs/2210.02449). 
+
+If you find this framework helpful to your research, please cite it with the following reference:
+
+```
+@article{gu2022degan,
+  title={DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation},
+  author={Gu, Yueyan and Jazizadeh, Farrokh},
+  journal={arXiv preprint arXiv:2210.02449},
+  year={2022}
+}
+```
+
 
 ### License
