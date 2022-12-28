@@ -49,7 +49,7 @@ In the anomaly detection component, kernel density estimation is used to assign 
 
 The DEGAN framework centers around repeated time series acquired to monitor the temporal variation in the operation of a given system. These time series reflect the performance of the system and the goal is to identify when/where an anomalous event is observed. 
 
-The example below shows an overall process of using repeated time series data for training, validation and testing in DEGAN, where _TSA_ is training data, _TSB_ is validation data and _TSC_ is testing data. 
+The example below shows an overall process of using repeated time series data for training, validation and testing in DEGAN, where _TS<sub>A_ is training data, _TS<sub>B_ is validation data and _TS<sub>C_ is testing data. 
 
 <img src="https://github.com/Test1122th/test1/blob/main/imgs/time_series.png" width="600" height="450" />
 
@@ -75,12 +75,12 @@ $ conda create --name <env> --file <this file>
 
 [Demo.ipynb](demo.ipynb) is an example of how to apply the DEGAN framework with your own time series datasets.
 
-To test and use the framework, you may get a local copy up and running the example steps in the demo file.
+To test and use the framework, you may get a local copy and run the example steps in the demo file.
 
 
 ### Sample Dataset
 
-The sample dataset is aquired from a building energy anomaly data (Link here). For the general usage of the project, the original sample data was simply pre-processed into the following datasets:
+The sample dataset is aquired from an [annotated dataset for energy anomaly detection in commercial buildings](https://arxiv.org/abs/2203.17256). For the general usage of the project, the original sample data was simply pre-processed into the following datasets:
 
 ```
     ├── Data                           # Data files
@@ -102,7 +102,7 @@ Users of this framework can organize their dataset following the similar structu
 The main functions of the DEGAN Demo are in the folder [DEGAN](https://github.com/Test1122th/test1/tree/main/DEGAN).
 
 
-To **generative adversarial network (GAN)** , including building the generator and the discriminator model to combining the two, setting their trainability, generating sample random noise, training and saving the trained discriminator models, refer to:
+To create the**generative adversarial network (GAN)** , including building the generator and the discriminator model, setting their trainability, generating sample random noise, training and saving the trained discriminator models, refer to:
 
 ```
 $ python Conv1D_GAN.py
