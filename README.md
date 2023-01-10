@@ -1,5 +1,27 @@
 <a name="readme-top"></a>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Publication
+
+Further details of the framework is introduced in this paper:
+[DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation](https://arxiv.org/abs/2210.02449). 
+
+If you find this framework helpful to your research, please cite it with the following reference:
+
+```
+@article{gu2022degan,
+  title={DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation},
+  author={Gu, Yueyan and Jazizadeh, Farrokh},
+  journal={arXiv preprint arXiv:2210.02449},
+  year={2022}
+}
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 # DEGAN
 
 This is the code repository for **DEGAN** (**D**ensity **E**stimation **G**enerative **A**dversarial **N**etwork).
