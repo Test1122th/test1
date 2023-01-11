@@ -82,9 +82,9 @@ The example below shows an overall process of using repeated time series data fo
 ### Required Environment/Packages
 
 The following main packages were used：   
-[matplotlib](https://matplotlib.org/stable/users/installing/index.html)  / [scikit-learn](https://scikit-learn.org/stable/install.html) / [tensorflow](https://www.tensorflow.org/install) / [keras](https://pypi.org/project/keras/) / [numpy](https://numpy.org/install/) / [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html) / [spicy](https://docs.zeek.org/projects/spicy/en/latest/installation.html#) / [tqdm](https://pypi.org/project/tqdm/)
+[matplotlib](https://matplotlib.org/stable/users/installing/index.html)  / [scikit-learn](https://scikit-learn.org/stable/install.html) / [tensorflow](https://www.tensorflow.org/install) / [keras](https://pypi.org/project/keras/) / [numpy](https://numpy.org/install/) / [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html) / [spicy](https://docs.zeek.org/projects/spicy/en/latest/installation.html#) / [tqdm](https://pypi.org/project/tqdm/) / [session-info](https://pypi.org/project/session-info/) 
 
-Other packages can be referred in [requirements](requirements.txt).
+All the packages can also be referred in [requirements](requirements.txt).
 
 This file may be used to create an environment using:
 ```
