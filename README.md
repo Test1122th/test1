@@ -1,26 +1,5 @@
 <a name="readme-top"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Publication
-
-Further details of the framework is introduced in this paper:
-[DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation](https://arxiv.org/abs/2210.02449). 
-
-If you find this framework helpful to your research, please cite it with the following reference:
-
-```
-@article{gu2022degan,
-  title={DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation},
-  author={Gu, Yueyan and Jazizadeh, Farrokh},
-  journal={arXiv preprint arXiv:2210.02449},
-  year={2022}
-}
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 # DEGAN
 
@@ -32,6 +11,7 @@ Users of this repo can conduct training and configuring Generative Adversarial N
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#publication">Publication</a></li>
     <li>
       <a href="#introduction">Introduction</a>
       <ul>
@@ -48,12 +28,31 @@ Users of this repo can conduct training and configuring Generative Adversarial N
       </ul>
     </li>
     <li><a href="#files">Files</a></li>
-    <li><a href="#publication">Publication</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+
+
+## Publication
+
+The details of the framework is introduced in this paper:
+[DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation](https://arxiv.org/abs/2210.02449). 
+
+If you find this framework helpful to your research, please cite it with the following reference:
+
+```
+@article{gu2022degan,
+  title={DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation},
+  author={Gu, Yueyan and Jazizadeh, Farrokh},
+  journal={arXiv preprint arXiv:2210.02449},
+  year={2022}
+}
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## Introduction
@@ -80,19 +79,19 @@ The example below shows an overall process of using repeated time series data fo
 
 ## Getting Started
 
-### Required Packages
+### Required Environment/Packages
 
 The following main packages were used：   
-[numpy](https://numpy.org/install/) / [random](https://docs.python.org/3/library/random.html) / [tensorflow](https://www.tensorflow.org/install) / [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+[matplotlib](https://matplotlib.org/stable/users/installing/index.html)  / [scikit-learn](https://scikit-learn.org/stable/install.html) / [tensorflow](https://www.tensorflow.org/install) / [keras](https://pypi.org/project/keras/) / [numpy](https://numpy.org/install/) / [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html) / [spicy](https://docs.zeek.org/projects/spicy/en/latest/installation.html#) / [tqdm](https://pypi.org/project/tqdm/)
 
 Other packages can be referred in [requirements](requirements.txt).
 
 This file may be used to create an environment using:
 ```
-$ conda create --name <env> --file <this file>
-# platform: osx-arm64
+$ pip install -r requirements.txt
 ```
 
+  
 ### Demo Project
 
 [Demo.ipynb](demo.ipynb) is an example of how to apply the DEGAN framework with your own time series datasets.
@@ -149,25 +148,6 @@ To look into the **helper functions** that perform part of the computations in o
 ```
 $ python utils.py
 ``` 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Publication
-
-Further details of the framework is introduced in this paper:
-[DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation](https://arxiv.org/abs/2210.02449). 
-
-If you find this framework helpful to your research, please cite it with the following reference:
-
-```
-@article{gu2022degan,
-  title={DEGAN: Time Series Anomaly Detection using Generative Adversarial Network Discriminators and Density Estimation},
-  author={Gu, Yueyan and Jazizadeh, Farrokh},
-  journal={arXiv preprint arXiv:2210.02449},
-  year={2022}
-}
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
